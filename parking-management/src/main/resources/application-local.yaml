@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:touk;INIT=CREATE SCHEMA IF NOT EXISTS parkingmanagement\;set schema parkingmanagement
+    username: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+  liquibase:
+    drop-first: true
+
+logging:
+  config: classpath:logback-local.xml

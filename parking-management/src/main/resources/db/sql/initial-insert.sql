@@ -1,0 +1,18 @@
+INSERT INTO parkingmanagement.currencies VALUES (1, 'PLN', 'PLN');
+INSERT INTO parkingmanagement.currencies VALUES (2, 'USD', 'USD');
+INSERT INTO parkingmanagement.parking_rates VALUES(1, 'b6bb276f-8805-4e2d-970e-4b1f6d48b307', true, 1, 2, 1.5, 1, 1);
+INSERT INTO parkingmanagement.parking_rates VALUES(2, 'b4c30bae-2083-496f-8602-58f7c6f3fa68', true, 0, 2, 1.2, 2, 1);
+INSERT INTO parkingmanagement.parking_rates VALUES(3, '8032b258-0c5a-4a83-b52e-0bf01b37f0bf', true, 0.25, 0.5, 1.5, 1, 2);
+INSERT INTO parkingmanagement.drivers VALUES(1, 'dcf8e56a-07be-40ba-90cf-5506117b7b6e', 'K', 'F', 'DRIVER', 'REGULAR');
+INSERT INTO parkingmanagement.drivers VALUES(2, '3c55852b-71f9-4b1f-86d2-5b955d52a7c9', 'M', 'F', 'DRIVER', 'DISABLED');
+INSERT INTO parkingmanagement.vehicles VALUES(1, 'a0aabfbc-a01c-4ade-ae3d-cdb8f3d64ecf', 'ABCDEFG');
+INSERT INTO parkingmanagement.vehicles VALUES(2, '78efd347-402d-4478-bcac-260b126f3f5c', 'GFEDCBA');
+INSERT INTO parkingmanagement.drivers_vehicles VALUES(1, 1);
+INSERT INTO parkingmanagement.drivers_vehicles VALUES(1, 2);
+INSERT INTO parkingmanagement.drivers_vehicles VALUES(2, 1);
+INSERT INTO parkingmanagement.parkings VALUES(1, 'ccc94669-3842-42c9-b9d5-1e99f40c7460', 1, 1, '2018-12-05T11:00:00.000+01:00', '2018-12-05T16:30:00.000+01:00', true);
+INSERT INTO parkingmanagement.parkings VALUES(2, '7f6b78ba-cd08-45e6-a3a7-91b42302b7bd', 1, 2, '2018-12-05T10:30:00.000+01:00', '2018-12-05T16:00:00.000+01:00', true);
+INSERT INTO parkingmanagement.parkings VALUES(3, '6021d51b-6803-4c12-9f9b-dd2c2f2fbcd8', 1, 1, '2018-12-05T18:00:00.000+01:00', '2018-12-05T20:30:00.000+01:00', true);
+INSERT INTO parkingmanagement.payments VALUES(1, '9815efd1-6631-48de-8d81-1b3a7d767d25', 1, 27.37, 'PLN', '2018-12-05');
+INSERT INTO parkingmanagement.payments VALUES(2, '9b21e460-8df4-4338-bd73-f30f725979da', 2, 14.87, 'PLN', '2018-12-05');
+INSERT INTO parkingmanagement.payments VALUES(3, '24f7fdc3-b3bf-4007-9781-a1411b5d16c7', 3, 1.5, 'USD', '2018-12-05');
